@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm-mobile: 350px;
+  --breakpoint-lg-mobile: 428px;
+  --breakpoint-sm: 460px;
+  --breakpoint-md: 650px;
+  --breakpoint-lg: 720px;
+  --breakpoint-xl: 1000px;
+  --breakpoint-xxl: 1200px;
+  --breakpoint-xxxl: 1400px;
+}
+
+body,
+.font-bricolage {
+  font-family: "Bricolage Grotesque Variable", sans-serif;
+  overflow-x: hidden;
+}
+
+.font-manrope {
+  font-family: "Manrope Variable", sans-serif;
+}
+
+.gradient-border {
+  border: 1px solid;
+  border-image: linear-gradient(to right, #a855f7, #ec4899) 1;
+  border-radius: 10%;
+}
+
+.text-design {
+  font-size: 120px;
+  font-weight: bold;
+  opacity: 20%;
+
+  -webkit-text-stroke: 2px #d1e8fc;
+
+  /* background: linear-gradient(to bottom, transparent 0%, rgb(255, 255, 255) 100%); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  white-space: nowrap;
+  transform: translateX(-19%);
+  letter-spacing: 10px;
+  overflow-x: hidden;
+}
+
+.projects {
+  border: black 1px;
+}
