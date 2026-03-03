@@ -8,7 +8,7 @@
   --breakpoint-lg: 720px;
   --breakpoint-xl: 1000px;
   --breakpoint-xxl: 1200px;
-  --breakpoint-xxxl: 1400px;
+  /* --breakpoint-xxlg: 1400px; */
 }
 
 body,
@@ -19,6 +19,14 @@ body,
 
 .font-manrope {
   font-family: "Manrope Variable", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter Variable", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 .gradient-border {
@@ -41,11 +49,13 @@ body,
   color: transparent;
 
   white-space: nowrap;
-  transform: translateX(-19%);
+  /* transform: translateX(-19%); */
   letter-spacing: 10px;
   overflow-x: hidden;
 }
 
-.projects {
-  border: black 1px;
+#next,
+#work,
+#resume {
+  scroll-margin-top: 40px;
 }
