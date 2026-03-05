@@ -1,5 +1,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Outlet } from "react-router-dom";
 
+import ScrollToTop from "./Components/ScrollToTop";
+
 import Home from "./pages/Home";
 import CosineWalletApp from "./pages/CosineWalletApp";
 import CosineWalletWebsite from "./pages/CosineWalletWebsite";
@@ -10,25 +12,40 @@ import Footer from "./Components/Footer";
 import NotFound from "./pages/NotFound";
 import AboutMe from "./pages/AboutMe";
 
-const RootLayout = () => (
-  <>
-    <header className='w-full'>
-      <div className='container mx-auto '>
+// Current Page Bar
+import CurrentPageBar from "./Components/CurrentPageBar";
+
+import { useLocation } from "react-router-dom";
+
+const RootLayout = () => {
+  const currentPath = useLocation().pathname;
+
+  // const excludedPaths = ["/", "/home", "/tutordem", "/dropcycle", "/about", "/cosinewalletapp", "/cosinewalletwebsite"];
+  // const showCurrentPageBar = !excludedPaths.includes(currentPath);
+
+  const showCurrentPageBar = currentPath !== "/" && currentPath !== "/home" && currentPath !== "*";
+
+  return (
+    <>
+      <ScrollToTop />
+      <header className='w-full'>
         <Navbar />
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <Outlet />
-    </main>
+      <main className='mt-30 '>
+        {showCurrentPageBar ? <CurrentPageBar /> : null}
 
-    <footer className='w-full'>
-      <div className=''>
-        <Footer />
-      </div>
-    </footer>
-  </>
-);
+        <Outlet />
+      </main>
+
+      <footer className='w-full'>
+        <div className=''>
+          <Footer />
+        </div>
+      </footer>
+    </>
+  );
+};
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,9 +53,8 @@ const router = createBrowserRouter(
       {/* My old method of defining index route */}
       <Route index element={<Home />} />
       {/* New Method */}
-      <Route path='home' element={<Home />} />
-      <Route path='cosinewalletapp' element={<CosineWalletApp />} />
       <Route path='cosinewalletwebsite' element={<CosineWalletWebsite />} />
+      <Route path='cosinewalletapp' element={<CosineWalletApp />} />
       <Route path='tutordem' element={<TutorDem />} />
       <Route path='dropcycle' element={<DropCycleWebsite />} />
       <Route path='about' element={<AboutMe />} />

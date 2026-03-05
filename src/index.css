@@ -57,5 +57,30 @@ body,
 #next,
 #work,
 #resume {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 160px;
 }
+
+.gradient-button {
+  position: relative;
+  background: white;
+  color: #2563eb;
+}
+
+.gradient-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #2563eb, #fff);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+/* 
+.gradient-button:hover {
+  background-color: #dcefff;
+  color: white;
+} */

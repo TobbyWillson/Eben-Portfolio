@@ -12,7 +12,7 @@ const Home = () => {
       <div className='container mx-auto'>
         <Description />
 
-        <p className='text-design flex items-center text-center my-20 '>AKINEBENEZER</p>
+        <p className='text-design flex items-center text-center my-5 mb-45'>AKINEBENEZER</p>
       </div>
 
       <SelectedProjectSection />

@@ -13,22 +13,23 @@ import VerticalLine from "../assets/images/Vertical-Line.png";
 
 const Description = () => {
   return (
-    <div>
+    // /////////////////////
+    <div className='mt-45 '>
       {/* Description Section */}
-      <div className='container mx-auto px-5 '>
-        <div className='flex flex-row justify-between mt-15'>
+      <div className='container mx-auto px-5 xl:pt-15'>
+        <div className='flex flex-row justify-between'>
           <div>
-            <p className='text-[28px] leading-10 md:text-[28px] md:leading-12 text-center md:text-start mt-5'>
+            <p className='text-[24px] leading-10 md:text-[40px] md:leading-15 xl:w-160 text-center md:text-start'>
               <span className='text-[#2563EB]'>I'm Eben,</span> a product designer focused on designing clear, trusted digital products.
             </p>
 
-            <div className='flex gap-3 sm:gap-6 justify-center py-[30px]  md:justify-start'>
-              <Link to='/about' className='rounded-full bg-[#DCEFFF] text-[#192239] px-6 py-3 text-[16px] hover:bg-[#b2d9f8]'>
+            <div className='flex gap-3 sm:gap-6 justify-center py-[30px] md:justify-start'>
+              <Link to='/about' className='rounded-full bg-[#DCEFFF] text-[#192239] px-5 py-3 text-[14px] md:text-[16px] hover:bg-[#b2d9f8]'>
                 My Resume
               </Link>
 
               <Link to='/'>
-                <div className='flex items-center rounded-full border px-5 py-3 text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] hover:border-transparent'>
+                <div className='gradient-button flex items-center rounded-full  px-5 py-3 text-[14px] md:text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] hover:border'>
                   <img src={Dialog} alt='Dialog' className='h-4.5 pr-2' />
                   book a call
                 </div>
@@ -37,7 +38,7 @@ const Description = () => {
 
             {/* Companies */}
 
-            <div className='flex flex-col items-center md:flex-row'>
+            <div className='flex flex-col items-center md:flex-row '>
               <div className='flex items-center pb-3 md:pb-0'>
                 <img src={CosineLogo} alt='Cosine Logo' className='h-[18px] md:h-[11px] xxl:h-[15px]' />
                 <p className='font-manrope text-[15px] md:text-[13px] p-2'>FOUNDING DESIGNER</p>
@@ -59,8 +60,8 @@ const Description = () => {
             </div>
           </div>
 
-          <div className='hidden md:block md:pt-12  xl:mr-20'>
-            <img src={globe} alt='globe' className='md:w-120 xl:w-90' />
+          <div className='hidden md:block md:pt-12 xl:mr-20'>
+            <img src={globe} alt='globe' className='md:w-120 lg:w-105 xl:w-70' />
           </div>
         </div>
       </div>

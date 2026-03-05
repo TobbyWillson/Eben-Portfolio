@@ -37,12 +37,12 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-6  justify-center items-center'>
-          <Link to='/' className=' text-[#192239] text-[16px] '>
+          <Link to='/about' className=' text-[#192239] text-[16px] '>
             My Resume
           </Link>
 
           <Link to='/'>
-            <div className='flex items-center rounded-full border px-5 py-3 text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] hover:border-transparent'>
+            <div className='gradient-button flex items-center rounded-full hover:border px-5 py-3 text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] '>
               <img src={Dialog} alt='Dialog' className='h-4.5 pr-2' />
               book a call
             </div>

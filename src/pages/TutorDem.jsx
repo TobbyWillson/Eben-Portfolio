@@ -22,8 +22,6 @@ import CurrentPageBar from "../Components/CurrentPageBar";
 const TutorDem = () => {
   return (
     <div>
-      <CurrentPageBar />
-
       <div className='bg-[#14122D] text-white'>
         <div className='container mx-auto pt-15'>
           <div className='flex flex-col items-center justify-center'>

@@ -23,22 +23,6 @@ import Dialog from "../assets/images/Dialog.png";
 
 // Images
 import CosineSafari from "../assets/images/Cosine-Safari.png";
-import CosineHandLogo from "../assets/images/CosineHandLogo.png";
-import AppHomeLight from "../assets/images/AppHomeLight.png";
-import AppHomeDark from "../assets/images/AppHomeDark.png";
-import SellAssets from "../assets/images/SellAssets.png";
-import SellAssets2 from "../assets/images/SellAssets2.png";
-import SendAssets from "../assets/images/SendAssets.png";
-import BlurImage from "../assets/images/BlurImage.png";
-import FullDAppsDark from "../assets/images/FullDAppsDark.png";
-import FullHomeDark from "../assets/images/FullHomeDark.png";
-import FullHomeLight from "../assets/images/FullHomeLight.png";
-import FullNotification from "../assets/images/FullNotification.png";
-import FullReceive from "../assets/images/FullReceive.png";
-import FullSellAssets from "../assets/images/FullSellAssets.png";
-import FullSplash from "../assets/images/FullSplash.png";
-import FullWalletCreationDark from "../assets/images/FullWalletCreationDark.png";
-import FullWalletCreationLight from "../assets/images/FullWalletCreationLight.png";
 import CosineSafariDark from "../assets/images/CosineSafariDark.png";
 import CosineSafariDarkMobile from "../assets/images/CosineSafariDarkMobile.png";
 import DropdownFeaturesLight from "../assets/images/DropdownFeaturesLight.png";
@@ -48,7 +32,7 @@ const CosineWallet = () => {
   return (
     <div className=''>
       {/* Current Page Bar */}
-      <CurrentPageBar />
+
       <div className='bg-linear-to-b from-[#FFF] to-[#DCEFFF] '>
         <div className='container mx-auto'>
           <div className='flex flex-col items-center justify-center mt-12'>

@@ -40,10 +40,11 @@ const SelectedProjectSection = () => {
             <p className='font-bold pt-1 text-[17px]'>Cosine Wallet Mobile App</p>
             <p className='text-start text-[13px] pt-4 pb-2 pr-7 md:pr-2 leading-5'>A self-custody crypto wallet designed for secure storage, seamless swaps, and everyday digital transactions.</p>
 
-            <div className='flex pt-4 pb-7 gap-2'>
-              <p className='text-start font-semibold text-[13px]'>View Case Study</p>
-              <FaArrowRight className='text-gray-500' />
-            </div>
+            <Link to='/cosinewalletapp'>
+              <div className='flex  pt-4 pb-7 gap-2'>
+                <p className='text-start font-semibold text-[13px]'> View Case Study </p> <FaArrowRight className='text-gray-500' />
+              </div>
+            </Link>
 
             <div className=''>
               <img src={CosineWalletMobile} alt='Cosine Wallet Mobile' />
@@ -58,10 +59,11 @@ const SelectedProjectSection = () => {
             </div>
             <p className='font-bold pt-1 text-[17px]'>DropCycle Mobile App</p>
             <p className='text-start text-[13px] pt-4 pb-2 pr-13 leading-5 md:pr-0'>A unified logistics ecosystem for businesses, drivers, and end customers.</p>
-            <div className='flex pt-4 pb-7 gap-2'>
-              <p className='text-start font-semibold text-[13px]'>View Case Study</p>
-              <FaArrowRight className='text-gray-500' />
-            </div>
+            <Link to='/dropcycle'>
+              <div className='flex  pt-4 pb-7 gap-2'>
+                <p className='text-start font-semibold text-[13px]'> View Case Study </p> <FaArrowRight className='text-gray-500' />
+              </div>
+            </Link>
 
             <div className=''>
               <img src={DropCycleMobile} alt='DropCycle Mobile' />
@@ -76,12 +78,12 @@ const SelectedProjectSection = () => {
               <p className='font-semibold text-[18px]'>DropCycle Website</p>
               <p className='text-[14px] md:pr-20 pt-3 pb-8 md:pb-0 xxl:pr-50'>A digital presence designed to attract business clients, onboard drivers, and communicate operational reliability across the delivery ecosystem.</p>
             </div>
-            <div className='flex gap-1'>
-              <Link to='/' className='font-semibold text-[14px] text-nowrap'>
-                View Website
-              </Link>
-              <MdArrowOutward className='text-[20px]' />
-            </div>
+
+            <Link to='/dropcycle'>
+              <div className='flex gap-1'>
+                <p className='font-semibold text-[14px] text-nowrap'> View Website</p> <MdArrowOutward className='text-[20px]' />
+              </div>
+            </Link>
           </div>
           <div className='pl-2'>
             <img src={DropCycleSafari} alt='' />
@@ -95,12 +97,11 @@ const SelectedProjectSection = () => {
               <p className='font-semibold text-[18px]'>Cosine Wallet Website</p>
               <p className='text-[14px] md:pr-20 pt-3 leading-6 pb-8 md:pb-0 xxl:pr-50'>A conversion-focused marketing site that simplifies complex crypto concepts and guides users from awareness to wallet download.</p>
             </div>
-            <div className='flex gap-1'>
-              <Link to='/' className='font-semibold text-[14px] text-nowrap'>
-                View Website
-              </Link>
-              <MdArrowOutward className='text-[20px]' />
-            </div>
+            <Link to='/cosinewalletwebsite'>
+              <div className='flex gap-1'>
+                <p className='font-semibold text-[14px] text-nowrap'> View Website</p> <MdArrowOutward className='text-[20px]' />
+              </div>
+            </Link>
           </div>
           <div className='pl-2'>
             <img src={CosineSafari} alt='' />
@@ -175,12 +176,11 @@ const SelectedProjectSection = () => {
               <p className='font-semibold text-[18px]'>TutorDem - EdTech</p>
               <p className='text-[14px] md:pr-25 pt-3 leading-6 pb-8 md:pb-0 xxl:pr-50'>A multi-sided education platform designed to improve student outcomes through tutor access, digital assessments, and real-time progress visibility.</p>
             </div>
-            <div className='flex gap-1 md:ml-10'>
-              <Link to='/' className='font-semibold text-[14px] text-nowrap'>
-                View Website
-              </Link>
-              <MdArrowOutward className='text-[20px]' />
-            </div>
+            <Link to='/tutordem'>
+              <div className='flex gap-1 md:ml-10'>
+                <p className='font-semibold text-[14px] text-nowrap'> View Website</p> <MdArrowOutward className='text-[20px]' />
+              </div>
+            </Link>
           </div>
           <div className='pl-2'>
             <img src={TutorDem} alt='' />

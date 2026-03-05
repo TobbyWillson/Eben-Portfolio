@@ -23,7 +23,7 @@ const CosineWallet = () => {
   return (
     <div className=''>
       {/* Current Page Bar */}
-      <CurrentPageBar />
+
       <div className='bg-linear-to-b from-[#FFF] to-[#DCEFFF] '>
         <div className='container mx-auto'>
           <div className='flex flex-col items-center justify-center mt-12'>
