@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "../index.css";
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/manrope";
@@ -11,7 +12,11 @@ import CosineLogo from "../assets/images/Cosine-Logo.png";
 import PoggahLogo from "../assets/images/Poggah-Logo.png";
 import VerticalLine from "../assets/images/Vertical-Line.png";
 
+import BookingModal from "./BookingModal";
+
 const Description = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     // /////////////////////
     <div className='mt-45 '>
@@ -28,12 +33,14 @@ const Description = () => {
                 My Resume
               </Link>
 
-              <Link to='/'>
-                <div className='gradient-button flex items-center rounded-full  px-5 py-3 text-[14px] md:text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] hover:border'>
+              <button to='/' onClick={setIsModalOpen}>
+                <div className='gradient-button flex items-center rounded-full  px-5 py-3 text-[14px] md:text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text- [#192239] hover:border cursor-pointer'>
                   <img src={Dialog} alt='Dialog' className='h-4.5 pr-2' />
                   book a call
                 </div>
-              </Link>
+              </button>
+
+              <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
 
             {/* Companies */}

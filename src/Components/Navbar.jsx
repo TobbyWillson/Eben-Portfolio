@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 right-0 w-full bg-white z-50 transition-shadow duration-500 ${scrolled ? "shadow-md" : ""}`}>
+    <div className={`fixed top-0 left-0 right-0 w-full bg-white z-50 transition-shadow duration-500 ${scrolled ? "shadow-lg" : ""}`}>
       {/* Nav Bar */}
       <div className='flex justify-between container mx-auto px-8 pt-12 pb-6'>
         <div className='flex items-center text-[14px] gap-11 '>

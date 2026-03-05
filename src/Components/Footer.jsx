@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/manrope";
@@ -14,9 +14,13 @@ import M from "../assets/images/socials/M.png";
 import instagram from "../assets/images/socials/Instagram.png";
 import whatsapp from "../assets/images/socials/Whatsapp.png";
 
+import BookingModal from "./BookingModal";
+
 const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div>
       {/* Footer - AkinEbenezer */}
@@ -41,12 +45,14 @@ const Footer = () => {
             My Resume
           </Link>
 
-          <Link to='/'>
-            <div className='gradient-button flex items-center rounded-full hover:border px-5 py-3 text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text-[#192239] '>
+          <button to='/' onClick={setIsModalOpen}>
+            <div className='gradient-button flex items-center rounded-full  px-5 py-3 text-[14px] md:text-[16px] text-[#2563EB] hover:bg-[#DCEFFF] hover:text- [#192239] hover:border cursor-pointer'>
               <img src={Dialog} alt='Dialog' className='h-4.5 pr-2' />
               book a call
             </div>
-          </Link>
+          </button>
+
+          <BookingModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </div>
 
