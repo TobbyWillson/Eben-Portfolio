@@ -11,8 +11,6 @@ const Home = () => {
     <div className=' min-h-screen'>
       <div className='container mx-auto'>
         <Description />
-
-        <p className='text-design flex items-center text-center my-5 mb-45'>AKINEBENEZER</p>
       </div>
 
       <SelectedProjectSection />

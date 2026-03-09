@@ -72,6 +72,8 @@ const Description = () => {
           </div>
         </div>
       </div>
+
+      <p className='text-design flex items-center text-center my-5 mb-45'>AKINEBENEZER</p>
     </div>
   );
 };

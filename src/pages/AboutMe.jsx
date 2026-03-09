@@ -57,7 +57,7 @@ const CosineWallet = () => {
             <p>If it moves money, coordinates operations, or supports high-volume users, I’m interested.</p>
           </div>
 
-          <div className='flex gap-3   items-center my-15 md:px-10'>
+          <div className='flex gap-3 justify-center md:justify-start items-center my-15 md:px-10'>
             <Link to='/' className=' text-[#192239] text-[16px] '>
               <div className='bg-[#DCEFFF] flex justify-center px-5 py-3 rounded-full'>My Resume</div>
             </Link>
