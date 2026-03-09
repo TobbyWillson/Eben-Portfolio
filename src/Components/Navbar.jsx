@@ -3,7 +3,7 @@ import "../index.css";
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/manrope";
 import ebenBlue from "../assets/images/Eben-logo.png";
-import ebenDark from "../assets/images/Eben-logo-dark.png";
+import ebenDark from "../assets/images/eben-logo-dark.png";
 
 import { Link, useNavigate } from "react-router-dom";
 
